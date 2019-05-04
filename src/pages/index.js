@@ -7,7 +7,7 @@ export default ({ data }) => {
   return (
     <div>
       {seats.map(seat => (
-        <Seat />
+        <Seat occupied={seat.node.occupied} />
       ))}
     </div>
   )
